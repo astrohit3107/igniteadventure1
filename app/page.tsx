@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Mountain, Users, MapPin, Phone, Mail } from "lucide-react"
+import { Mountain, Users, MapPin, Phone, Mail } from 'lucide-react'
 import Link from "next/link"
 import TestimonialsSlider from "@/components/testimonials-slider"
 import GalleryPreview from "@/components/gallery-preview"
+import HeroSlider from "@/components/hero-slider" // Import the new HeroSlider component
 
 export default function HomePage() {
   const services = [
@@ -45,44 +46,8 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section with Background Image */}
-      <section className="relative bg-gradient-to-br from-slate-800 via-amber-700 to-slate-800 text-stone-100 py-20 lg:py-32 overflow-hidden">
-        {/* Background Image Container */}
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-black/40 absolute inset-0 z-10"></div>
-          <img
-            src="/hero-background.jpg"
-            alt="Adventure Background - Rafting with historic temples"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-shadow-lg">Ignite Adventure</h1>
-            <p className="text-xl md:text-2xl mb-8 text-stone-200 font-body text-shadow">
-              Transforming Education Through Adventure & Exploration
-            </p>
-            <p className="text-lg mb-10 max-w-3xl mx-auto leading-relaxed font-body text-shadow">
-              We specialize in creating unforgettable educational adventures for schools through in-campus programs,
-              day-out experiences, and residential trips across India and beyond.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-stone-100 text-slate-800 hover:bg-stone-200 font-body shadow-lg">
-                <Link href="/about">Learn About Us</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-stone-100 text-stone-100 hover:bg-stone-100 hover:text-slate-800 bg-transparent font-body shadow-lg"
-              >
-                <Link href="/gallery">View Gallery</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section - Now an Image Slider */}
+      <HeroSlider />
 
       {/* Services Section */}
       <section className="py-16 lg:py-24 bg-stone-100">
