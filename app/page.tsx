@@ -41,7 +41,7 @@ export default function HomePage() {
     },
   ]
 
-  const indianLocations = ["Mussoorie", "Corbett", "Nainital", "Barot", "Manali", "Shimla", "Amritsar","Jaipur","Kerala","Udaipur-Kumbhalgarh","Jaisalmer","Agra","Delhi","Ooty","Darjeeling","Mumbai-Lonavla"]
+  const indianLocations = ["Mussoorie", "Corbett", "Nainital", "Barot", "Manali", "Shimla", "Amritsar"]
 
   return (
     <div className="flex flex-col min-h-screen">
