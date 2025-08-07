@@ -84,8 +84,7 @@ export default function HeroSlider() {
                 <Image
                   src={slide.src || "/placeholder.svg"}
                   alt={slide.alt}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   priority={index === 0} // Prioritize loading the first image
                   className="z-0"
                 />
