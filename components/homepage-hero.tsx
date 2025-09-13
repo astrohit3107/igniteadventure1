@@ -78,7 +78,7 @@ export default function HomepageHero() {
 
   return (
     <section
-      className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden"
+      className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
     >
@@ -96,36 +96,36 @@ export default function HomepageHero() {
               alt={slide.alt}
               fill
               priority={index === 0}
-              className="object-cover"
+              className="object-cover sm:object-center object-[center_30%]"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/70" />
           </div>
         ))}
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white p-4">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <p className="text-lg md:text-xl font-body mb-2 opacity-90 tracking-wider">IGNITE ADVENTURE</p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-4 drop-shadow-2xl leading-tight">
+          <p className="text-sm sm:text-lg md:text-xl font-body mb-2 opacity-90 tracking-wider">IGNITE ADVENTURE</p>
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-2 sm:mb-4 drop-shadow-2xl leading-tight">
             {heroSlides[currentSlide].title}
           </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-body mb-4 drop-shadow-lg text-amber-300">
+          <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-body mb-3 sm:mb-4 drop-shadow-lg text-amber-300">
             {heroSlides[currentSlide].subtitle}
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl font-body mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl font-body mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed px-2">
             {heroSlides[currentSlide].description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
             <Button
               asChild
               size="lg"
-              className="bg-amber-700 text-white hover:bg-amber-600 font-body shadow-xl px-8 py-3"
+              className="bg-amber-700 text-white hover:bg-amber-600 font-body shadow-xl px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base"
             >
               <Link href="tel:+919650485880">
-                <Phone className="w-5 h-5 mr-2" />
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Call Us Now
               </Link>
             </Button>
@@ -133,10 +133,10 @@ export default function HomepageHero() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-slate-800 bg-transparent font-body shadow-xl px-8 py-3"
+              className="border-2 border-white text-white hover:bg-white hover:text-slate-800 bg-transparent font-body shadow-xl px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base"
             >
               <Link href="mailto:info.igniteadventure@gmail.com">
-                <Mail className="w-5 h-5 mr-2" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Get Quote
               </Link>
             </Button>
@@ -147,26 +147,26 @@ export default function HomepageHero() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all duration-300"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-2 sm:p-3 rounded-full backdrop-blur-sm transition-all duration-300"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all duration-300"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-2 sm:p-3 rounded-full backdrop-blur-sm transition-all duration-300"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
+      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
         {heroSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
               index === currentSlide ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
             }`}
             aria-label={`Go to slide ${index + 1}`}
