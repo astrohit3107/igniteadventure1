@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Mountain, Users, MapPin, Phone, Mail } from 'lucide-react'
+import { Mountain, Users, MapPin, Phone, Mail } from "lucide-react"
 import Link from "next/link"
 import TestimonialsSlider from "@/components/testimonials-slider"
 import GalleryPreview from "@/components/gallery-preview"
-import HeroSlider from "@/components/hero-slider" // Import the new HeroSlider component
+import HomepageHero from "@/components/homepage-hero"
 
 export default function HomePage() {
   const services = [
@@ -63,8 +63,8 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section - Now an Image Slider */}
-      <HeroSlider />
+      {/* Hero Section - New Homepage Hero */}
+      <HomepageHero />
 
       {/* Services Section */}
       <section className="py-16 lg:py-24 bg-stone-100">
