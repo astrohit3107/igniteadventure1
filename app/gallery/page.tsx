@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Camera, Filter } from 'lucide-react'
+import { Camera, Filter } from "lucide-react"
 import Image from "next/image"
 
 export default function GalleryPage() {
@@ -18,103 +18,6 @@ export default function GalleryPage() {
   ]
 
   const galleryImages = [
-    {
-      id: 1,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Students rock climbing during adventure program",
-      title: "Rock Climbing Adventure",
-      category: "day-out",
-      location: "Corbett",
-    },
-    {
-      id: 2,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Group photo at Manali residential trip",
-      title: "Manali Group Adventure",
-      category: "residential",
-      location: "Manali",
-    },
-    {
-      id: 3,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Astronomy program stargazing session",
-      title: "Stargazing Session",
-      category: "astronomy",
-      location: "Nainital",
-    },
-    {
-      id: 4,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Team building activities on school campus",
-      title: "Campus Team Building",
-      category: "in-school",
-      location: "Delhi",
-    },
-    {
-      id: 5,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Nature walk and exploration",
-      title: "Nature Exploration",
-      category: "day-out",
-      location: "Mussoorie",
-    },
-    {
-      id: 6,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Adventure sports and activities",
-      title: "Adventure Sports",
-      category: "residential",
-      location: "Shimla",
-    },
-    {
-      id: 7,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Students using telescopes",
-      title: "Telescope Observation",
-      category: "astronomy",
-      location: "Barot",
-    },
-    {
-      id: 8,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Rappelling activity",
-      title: "Rappelling Challenge",
-      category: "day-out",
-      location: "Corbett",
-    },
-    {
-      id: 9,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Indoor team activities",
-      title: "Indoor Team Challenges",
-      category: "in-school",
-      location: "Mumbai",
-    },
-    {
-      id: 10,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Mountain trekking",
-      title: "Mountain Trek",
-      category: "residential",
-      location: "Manali",
-    },
-    {
-      id: 11,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Night sky photography",
-      title: "Astrophotography Workshop",
-      category: "astronomy",
-      location: "Mussoorie",
-    },
-    {
-      id: 12,
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "River crossing activity",
-      title: "River Crossing",
-      category: "day-out",
-      location: "Nainital",
-    },
-    // Previously added images
     {
       id: 13,
       src: "/gallery/10.jpg",
@@ -195,7 +98,6 @@ export default function GalleryPage() {
       category: "day-out",
       location: "Outdoor Site",
     },
-    // More previously added images
     {
       id: 23,
       src: "/gallery/18.jpg",
@@ -276,7 +178,6 @@ export default function GalleryPage() {
       category: "astronomy",
       location: "Outdoor Site",
     },
-    // New images added below
     {
       id: 33,
       src: "/gallery/27.jpg",
@@ -449,7 +350,9 @@ export default function GalleryPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-orbitron font-bold mb-4 text-slate-800">Captured Memories</h2>
-            <p className="text-xl font-exo-2 text-slate-600">Every photo tells a story of adventure, learning, and growth</p>
+            <p className="text-xl font-exo-2 text-slate-600">
+              Every photo tells a story of adventure, learning, and growth
+            </p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
