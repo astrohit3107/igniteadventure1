@@ -14,10 +14,10 @@ export default function HomePage() {
       description:
         "Bring adventure directly to your school with our engaging on-campus programs designed to build teamwork and confidence.",
       features: [
-        "Team Building Activities",
-        "Leadership Development",
+        "15+ Team Building Activities", // updated from 4 to 15+ activities
+        "Leadership Development Programs",
         "Problem Solving Challenges",
-        "Adventure Sports",
+        "20:1 Child-Instructor Ratio", // added instructor ratio
       ],
       icon: Users,
       href: "/services/in-school",

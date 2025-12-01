@@ -2,104 +2,102 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Users, Clock, CheckCircle, Phone } from "lucide-react"
+import { Users, CheckCircle, Phone } from "lucide-react"
 import Image from "next/image"
 
 export default function InSchoolPage() {
   const activities = [
-    {
-      title: "Team Building Challenges",
-      description: "Interactive activities designed to improve communication and collaboration among students.",
-      duration: "2-3 hours",
-      participants: "20-40 students",
-    },
-    {
-      title: "Leadership Development",
-      description: "Activities focused on developing leadership skills and decision-making abilities.",
-      duration: "3-4 hours",
-      participants: "15-30 students",
-    },
-    {
-      title: "Problem Solving Games",
-      description: "Engaging puzzles and challenges that promote critical thinking and creativity.",
-      duration: "2-3 hours",
-      participants: "25-50 students",
-    },
-    {
-      title: "Trust Building Exercises",
-      description: "Activities designed to build trust and strengthen relationships within the group.",
-      duration: "1-2 hours",
-      participants: "20-35 students",
-    },
-    {
-      title: "Communication Workshops",
-      description: "Interactive sessions to improve verbal and non-verbal communication skills.",
-      duration: "2-3 hours",
-      participants: "20-40 students",
-    },
-    {
-      title: "Adventure Simulations",
-      description: "Indoor adventure scenarios that challenge students in a safe environment.",
-      duration: "3-4 hours",
-      participants: "15-25 students",
-    },
+    { title: "Alpha Cross" },
+    { title: "Burma Bridge" },
+    { title: "Commando Bridge" },
+    { title: "Commando Crawl" },
+    { title: "Commando Net" },
+    { title: "Double Rope Bridge" },
+    { title: "Diagonal Rope Ladder" },
+    { title: "Body Zorb" },
+    { title: "Rope Ladder Climbing" },
+    { title: "Sport Climbing" },
+    { title: "Three Tyre Hurdle" },
+    { title: "Tyre Swing" },
+    { title: "Zipline" },
+    { title: "Laser Beam" },
+    { title: "Minefield" },
   ]
 
   const benefits = [
-    "No travel required - activities conducted on your school premises",
-    "Flexible scheduling to fit your school timetable",
-    "Age-appropriate activities for different grade levels",
-    "Professional facilitators with educational background",
-    "All equipment and materials provided",
-    "Customizable programs based on your objectives",
-    "Safe and supervised environment",
-    "Immediate application of learning in familiar setting",
+    "First-of-its-Kind Experiential Learning: Uniquely combines life skills education with sports for hands-on learning",
+    "Increased Emotional Intelligence: Students become more self-aware and sensitive to their surroundings",
+    "Certified and Trained Instructors: Technically and behaviorally trained professionals ensure effective instruction",
+    "Enhanced Confidence and Self-Esteem: Overcoming fears in a protected environment boosts self-belief",
+    "Balanced Gender Representation: Healthy mix of female instructors for comfort and specific needs",
+    "Refined Leadership Skills: Students leverage team member strengths for effective collaboration",
+    "Uninterrupted Supervision: Camps meticulously designed for vigilant supervision at all times",
+    "Improved Focus and Determination: Students develop resilience by pushing beyond comfort zones",
+    "100% Safety Record: UIAA-tested and certified equipment ensures flawless safety",
+    "Boosted Problem-Solving Abilities: Challenging activities foster creative thinking and decision-making",
+    "Personalized Learning Approaches: Activities tailored to different learning styles",
+    "Strengthened Social Skills: Collaborative tasks teach accountability and teamwork",
+    "Holistic Development Focus: Structured to promote physical, emotional, and cognitive growth",
+    "Heightened Adaptability: Exposure to diverse situations enhances flexibility and adjustment abilities",
   ]
 
   const packages = [
     {
-      name: "Half Day Program",
+      name: "In-School 9 AM to 1 PM",
       duration: "4 hours",
-      participants: "Up to 30 students",
-      activities: "3-4 activities",
-      price: "₹15,000",
-      features: [
-        "Team building activities",
-        "Leadership challenges",
-        "Problem solving games",
-        "Professional facilitators",
-        "All equipment included",
+      participants: "300 minimum",
+      activities: "13-15 Activities (As per age groups)",
+      ratio: "20:1",
+      schedule: [
+        { time: "09:00 am", activity: "Briefing and Group Distribution" },
+        { time: "09:15 am", activity: "Adventure Activity Starts" },
+        { time: "10:30 am", activity: "Break time" },
+        { time: "11:00 am", activity: "Adventure Activity Restarts" },
+        { time: "01:00 pm", activity: "Camp Concludes" },
       ],
     },
     {
-      name: "Full Day Program",
-      duration: "8 hours",
-      participants: "Up to 50 students",
-      activities: "6-8 activities",
-      price: "₹25,000",
-      features: [
-        "Complete adventure experience",
-        "Multiple team challenges",
-        "Leadership development",
-        "Communication workshops",
-        "Lunch break coordination",
-        "Certificate of participation",
+      name: "In-School 9 AM to 4 PM",
+      duration: "7 hours",
+      participants: "300 minimum",
+      activities: "13-15 Activities (As per age groups)",
+      ratio: "20:1",
+      schedule: [
+        { time: "09:00 am", activity: "Briefing and Group Distribution" },
+        { time: "09:15 am", activity: "Adventure Activity Starts" },
+        { time: "10:00 am", activity: "Break time & Mid-Day Meal*" },
+        { time: "10:30 am", activity: "Adventure Activity Restart" },
+        { time: "01:00 pm", activity: "Lunch*" },
+        { time: "02:00 pm", activity: "Magic Show / DJ & Camp Games" },
+        { time: "03:30 pm", activity: "Snack*" },
+        { time: "04:00 pm", activity: "Camp Concludes" },
       ],
       popular: true,
     },
     {
-      name: "Multi-Day Program",
-      duration: "2-3 days",
-      participants: "Up to 100 students",
-      activities: "10+ activities",
-      price: "₹40,000",
-      features: [
-        "Comprehensive skill development",
-        "Progressive difficulty levels",
-        "Individual & group assessments",
-        "Teacher training component",
-        "Detailed progress reports",
-        "Follow-up sessions",
+      name: "Overnight Camp",
+      duration: "24 hours",
+      participants: "300 minimum",
+      activities: "13-15 Activities (As per age groups)",
+      ratio: "20:1",
+      schedule: [
+        { time: "01:00 pm", activity: "Assembly and Group Distribution" },
+        { time: "01:15 pm", activity: "Activity Begins" },
+        { time: "01:30 pm", activity: "Lunch Time" },
+        { time: "02:30 pm", activity: "More Activities" },
+        { time: "04:30 pm", activity: "Snack Time" },
+        { time: "05:30 pm", activity: "Camp Games & Skill Development" },
+        { time: "07:00 pm", activity: "Campfire & Music" },
+        { time: "08:30 pm", activity: "Dinner" },
+        { time: "10:00 pm", activity: "Astronomy Session" },
+        { time: "11:00 pm", activity: "Lights Off" },
+        { time: "06:00 am", activity: "Wake Up Call" },
+        { time: "06:30 am", activity: "Exercise / Yoga" },
+        { time: "08:00 am", activity: "Breakfast" },
+        { time: "09:30 am", activity: "Camp Game" },
+        { time: "11:00 am", activity: "Magic Show/Music" },
+        { time: "01:00 pm", activity: "Lunch" },
+        { time: "02:00 pm", activity: "Camp Dispersal" },
       ],
     },
   ]
@@ -116,6 +114,11 @@ export default function InSchoolPage() {
               Bring the excitement of adventure learning directly to your school campus with our engaging, educational
               programs designed to build teamwork, leadership, and confidence.
             </p>
+            <div className="bg-stone-100 bg-opacity-20 rounded-lg py-4 px-6 inline-block mb-8">
+              <p className="text-lg font-body">
+                Professional Facilitators • 20:1 Child-Instructor Ratio • Safe & Certified
+              </p>
+            </div>
             <Button asChild size="lg" className="bg-stone-100 text-slate-800 hover:bg-stone-200 font-body">
               <Link href="tel:+919650485880">
                 <Phone className="w-5 h-5 mr-2" />
@@ -135,32 +138,56 @@ export default function InSchoolPage() {
                 Why Choose In-School Programs?
               </h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6 font-body">
-                Our in-school adventure programs are perfect for schools looking to provide students with transformative
-                learning experiences without the logistics of travel. We bring professional-grade adventure activities
-                directly to your campus.
+                Our In-School Day Programs bring curated adventure learning directly to your campus delivering
+                exceptional, professionally facilitated experiences without the need for travel.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed mb-8 font-body">
-                These programs are designed to complement your curriculum while developing essential life skills like
-                teamwork, communication, problem-solving, and leadership in a fun, engaging environment.
+                Designed to elevate your curriculum, these programs blend premium adventure activities with essential
+                life skill development, creating an immersive environment where students learn, lead, and grow with
+                confidence.
+              </p>
+              <p className="text-lg text-slate-700 leading-relaxed mb-8 font-body">
+                A seamless, safe, and enriching experience crafted to make learning truly inspiring.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-amber-50 rounded-lg">
-                  <div className="text-2xl font-bold text-amber-700 font-heading">500+</div>
+                  <div className="text-2xl font-bold text-amber-700 font-heading">110+</div>
                   <div className="text-sm text-slate-600 font-body">Schools Served</div>
                 </div>
                 <div className="text-center p-4 bg-slate-50 rounded-lg">
-                  <div className="text-2xl font-bold text-slate-800 font-heading">15,000+</div>
+                  <div className="text-2xl font-bold text-slate-800 font-heading">45,000+</div>
                   <div className="text-sm text-slate-600 font-body">Students Impacted</div>
                 </div>
               </div>
             </div>
-            <div>
+            <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Students participating in in-school adventure activities"
-                width={600}
-                height={500}
-                className="rounded-lg shadow-xl"
+                src="/gallery/10.jpg"
+                alt="In-School Adventure Activity"
+                width={300}
+                height={300}
+                className="rounded-lg shadow-lg object-cover h-full"
+              />
+              <Image
+                src="/gallery/4.jpg"
+                alt="Team Building Activity"
+                width={300}
+                height={300}
+                className="rounded-lg shadow-lg object-cover h-full"
+              />
+              <Image
+                src="/gallery/3.jpg"
+                alt="Leadership Activity"
+                width={300}
+                height={300}
+                className="rounded-lg shadow-lg object-cover h-full"
+              />
+              <Image
+                src="/gallery/9.jpg"
+                alt="Group Adventure Activity"
+                width={300}
+                height={300}
+                className="rounded-lg shadow-lg object-cover h-full"
               />
             </div>
           </div>
@@ -171,7 +198,7 @@ export default function InSchoolPage() {
       <section className="py-16 lg:py-24 bg-stone-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-slate-800">Program Activities</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-slate-800">15+ Activities</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto font-body">
               Our carefully designed activities focus on skill development while ensuring maximum engagement and fun
             </p>
@@ -180,21 +207,8 @@ export default function InSchoolPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {activities.map((activity, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-white">
-                <CardHeader>
-                  <CardTitle className="text-xl text-slate-800 font-heading">{activity.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600 mb-4 font-body">{activity.description}</p>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-sm text-slate-500 font-body">
-                      <Clock className="w-4 h-4 mr-2" />
-                      Duration: {activity.duration}
-                    </div>
-                    <div className="flex items-center text-sm text-slate-500 font-body">
-                      <Users className="w-4 h-4 mr-2" />
-                      Participants: {activity.participants}
-                    </div>
-                  </div>
+                <CardContent className="pt-6">
+                  <p className="text-lg font-semibold text-slate-800 font-heading text-center">{activity.title}</p>
                 </CardContent>
               </Card>
             ))}
@@ -229,9 +243,9 @@ export default function InSchoolPage() {
       <section className="py-16 lg:py-24 bg-stone-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-slate-800">Program Packages</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-slate-800">Our In-house Programs</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto font-body">
-              Choose the perfect package that fits your school's needs and schedule
+              Choose the perfect program that fits your school's needs and schedule
             </p>
           </div>
 
@@ -250,24 +264,24 @@ export default function InSchoolPage() {
                 )}
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-slate-800 font-heading">{pkg.name}</CardTitle>
-                  <div className="text-3xl font-bold text-amber-700 font-heading">{pkg.price}</div>
-                  <div className="space-y-1 text-sm text-slate-600 font-body">
+                  <div className="space-y-1 text-sm text-slate-600 font-body pt-4">
                     <div>Duration: {pkg.duration}</div>
                     <div>Participants: {pkg.participants}</div>
                     <div>Activities: {pkg.activities}</div>
+                    <div className="font-semibold text-slate-700 pt-2">Instructor Ratio: {pkg.ratio}</div>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-3 mb-6">
-                    {pkg.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-amber-700 flex-shrink-0" />
-                        <span className="text-sm text-slate-700 font-body">{feature}</span>
+                  <div className="space-y-2 mb-6">
+                    <h4 className="font-semibold text-slate-800 text-sm mb-3">Schedule:</h4>
+                    {pkg.schedule.map((item, idx) => (
+                      <div key={idx} className="text-sm text-slate-700 font-body">
+                        <span className="font-semibold text-amber-700">{item.time}</span> - {item.activity}
                       </div>
                     ))}
                   </div>
                   <Button asChild className="w-full bg-slate-800 hover:bg-slate-700 font-body">
-                    <Link href="tel:+919650485880">Book This Package</Link>
+                    <Link href="tel:+919650485880">Book This Program</Link>
                   </Button>
                 </CardContent>
               </Card>
