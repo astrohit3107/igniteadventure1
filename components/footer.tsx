@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src="/logo.svg" alt="Ignite Adventure Logo" className="h-24 w-auto" />
+              <img src="/logo.png" alt="Ignite Adventure Logo" className="h-32 w-auto" />
             </div>
             <p className="text-stone-300 text-sm leading-relaxed">
               Transforming education through adventure and exploration. We create unforgettable learning experiences for
@@ -36,22 +36,34 @@ export default function Footer() {
                 Gallery
               </Link>
               <Link
-                href="/services/in-school"
+                href="/programs/in-school"
                 className="block text-stone-300 hover:text-stone-100 transition-colors text-sm"
               >
-                In-School Programs
+                In-School Adventure Camps
               </Link>
               <Link
-                href="/services/day-out"
+                href="/programs/day-out"
                 className="block text-stone-300 hover:text-stone-100 transition-colors text-sm"
               >
-                Day-Out Adventures
+                Day-Out Adventure Camps
               </Link>
               <Link
-                href="/services/residential"
+                href="/programs/residential"
                 className="block text-stone-300 hover:text-stone-100 transition-colors text-sm"
               >
-                Residential Trips
+                Residential Adventure Trips
+              </Link>
+              <Link
+                href="/programs/international-exposure"
+                className="block text-stone-300 hover:text-stone-100 transition-colors text-sm"
+              >
+                International Exposure
+              </Link>
+              <Link
+                href="/programs/iayp-cas"
+                className="block text-stone-300 hover:text-stone-100 transition-colors text-sm"
+              >
+                IAYP & CAS Programs
               </Link>
             </div>
           </div>

@@ -31,10 +31,10 @@ export default function AboutPage() {
   ]
 
   const stats = [
-    { number: "500+", label: "Schools Served" },
-    { number: "25,000+", label: "Students Impacted" },
-    { number: "8+", label: "Years Experience" },
-    { number: "15+", label: "Destinations" },
+    { number: "120+", label: "Schools Served" },
+    { number: "80,000+", label: "Students Impacted" },
+    { number: "4+", label: "Years Experience" },
+    { number: "20+", label: "Destinations" },
   ]
 
   return (
@@ -63,9 +63,8 @@ export default function AboutPage() {
                   <h2 className="text-3xl font-bold text-slate-800">Our Mission</h2>
                 </div>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  To revolutionize education by providing safe, engaging, and transformative adventure experiences that
-                  develop confidence, leadership, and life skills in students while fostering a deep connection with
-                  nature and diverse cultures.
+                  We believe outdoor should be accessible to every student. In a world dominated by screens, outdoor
+                  experiences are no longer a luxury—but a necessity for holistic development.
                 </p>
               </div>
 
@@ -156,28 +155,21 @@ export default function AboutPage() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-6">
-                Ignite Adventure was founded in 2016 by a group of passionate educators and adventure enthusiasts who
+                Ignite Adventure was founded in 2021 by a group of passionate educators and adventure enthusiasts who
                 recognized the transformative power of experiential learning. We saw how traditional classroom
                 education, while valuable, often missed opportunities to develop crucial life skills like leadership,
                 teamwork, and resilience.
               </p>
 
               <p className="text-slate-700 leading-relaxed mb-6">
-                Starting with just a handful of schools in Delhi, we began offering in-school adventure programs that
+                Starting with just a handful of schools in Jaipur we began offering in-school adventure programs that
                 brought excitement and hands-on learning directly to students. The positive response was overwhelming –
                 teachers noticed improved confidence, better teamwork, and enhanced problem-solving abilities in their
                 students.
               </p>
 
-              <p className="text-slate-700 leading-relaxed mb-6">
-                As word spread, we expanded our offerings to include day-out adventures and residential school trips
-                across India's most beautiful and educationally rich destinations. Our astronomy programs, in
-                particular, have become a signature offering, combining adventure with scientific learning under India's
-                pristine night skies.
-              </p>
-
               <p className="text-slate-700 leading-relaxed">
-                Today, we're proud to have impacted over 25,000 students across 500+ schools, but our mission remains
+                Today, we're proud to have impacted over 80,000 students across 120+ schools, but our mission remains
                 the same: to ignite the spirit of adventure and learning in every student we serve. We continue to
                 innovate, expand, and refine our programs to ensure they remain relevant, safe, and transformative for
                 the next generation of learners.

@@ -9,31 +9,41 @@ import { Menu } from "lucide-react"
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const services = [
+  const programs = [
     {
-      title: "In-School Adventure Programs",
+      title: "In-School Adventure Camps",
       description: "On-campus adventure activities and team building",
-      href: "/services/in-school",
+      href: "/programs/in-school",
     },
     {
-      title: "Day-Out Adventure Programs",
+      title: "Day-Out Adventure Camps",
       description: "Single-day adventure experiences",
-      href: "/services/day-out",
+      href: "/programs/day-out",
     },
     {
-      title: "Residential School Trips",
+      title: "Residential Adventure Trips",
       description: "Multi-day educational adventures",
-      href: "/services/residential",
+      href: "/programs/residential",
+    },
+    {
+      title: "International Exposure",
+      description: "Global adventure and cultural exchange programs",
+      href: "/programs/international-exposure",
+    },
+    {
+      title: "IAYP & CAS Programs",
+      description: "Award and certification focused programs",
+      href: "/programs/iayp-cas",
     },
   ]
 
   return (
     <header className="w-full border-b border-amber-200 bg-slate-800">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <img src="/logo.svg" alt="Ignite Adventure Logo" className="h-12 w-auto" />
-            <span className="text-xl font-heading font-bold text-stone-100">Ignite Adventure</span>
+            <img src="/logo.png" alt="Ignite Adventure Logo" className="h-12 w-auto" />
+            
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,7 +58,7 @@ export default function Navbar() {
 
             <div className="relative group">
               <button className="text-sm font-medium text-stone-100 transition-colors flex items-center space-x-1 font-body">
-                <span>Services</span>
+                <span>Programs</span>
                 <svg
                   className="w-4 h-4 transition-transform group-hover:rotate-180"
                   fill="none"
@@ -65,16 +75,16 @@ export default function Navbar() {
                 <div className="absolute -top-2 left-0 right-0 h-2 bg-transparent"></div>
 
                 <div className="p-2">
-                  {services.map((service, index) => (
+                  {programs.map((program, index) => (
                     <Link
                       key={index}
-                      href={service.href}
+                      href={program.href}
                       className="group/item flex flex-col p-4 rounded-md hover:bg-stone-50 transition-colors duration-200"
                     >
                       <div className="text-sm font-medium text-slate-800 group-hover/item:text-amber-700 transition-colors font-heading">
-                        {service.title}
+                        {program.title}
                       </div>
-                      <div className="text-sm text-slate-600 mt-1 leading-snug font-body">{service.description}</div>
+                      <div className="text-sm text-slate-600 mt-1 leading-snug font-body">{program.description}</div>
                     </Link>
                   ))}
                 </div>
@@ -115,15 +125,15 @@ export default function Navbar() {
                 </Link>
 
                 <div className="space-y-2">
-                  <div className="text-lg font-medium text-slate-800 font-heading">Services</div>
-                  {services.map((service, index) => (
+                  <div className="text-lg font-medium text-slate-800 font-heading">Programs</div>
+                  {programs.map((program, index) => (
                     <Link
                       key={index}
-                      href={service.href}
+                      href={program.href}
                       className="block pl-4 text-sm text-slate-600 transition-colors font-body"
                       onClick={() => setIsOpen(false)}
                     >
-                      {service.title}
+                      {program.title}
                     </Link>
                   ))}
                 </div>
