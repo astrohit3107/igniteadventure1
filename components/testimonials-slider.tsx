@@ -7,44 +7,44 @@ import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Dr. Priya Sharma",
-    position: "Principal, Delhi Public School",
+    name: "Mrs. Kamal Rathore",
+    position: "Principal, Tagore International School",
     content:
-      "Ignite Adventure transformed our students' perspective on learning. The residential trip to Manali was educational, safe, and incredibly well-organized. Our students are still talking about the astronomy program!",
+      "The adventure camp at Kanota Resort proved to be a highly enriching and memorable experience for our students. It offered a perfect blend of learning, adventure, and personal growth, helping students develop confidence, teamwork, and leadership skills in a safe and well-organized environment. The activities were conducted with excellent planning and strict safety measures, allowing students to participate wholeheartedly and step beyond their comfort zones. Such experiential programs play a vital role in the holistic development of students and leave a lasting positive impact. We truly appreciate the effort and professionalism of the team and look forward to many more meaningful collaborations in the future.",
     rating: 5,
-    school: "Delhi Public School",
+    school: "Tagore International School",
   },
   {
-    name: "Rajesh Kumar",
-    position: "Activity Coordinator, St. Mary's School",
+    name: "Ranjan Saini",
+    position: "Student, Euro International School",
     content:
-      "The in-school adventure program was fantastic! The team brought so much energy and expertise. Our students learned valuable life skills through fun, engaging activities right on our campus.",
+      "If there is one journey I’ll remember for a lifetime, it’s the adventure I shared with Prakash Ranjan sir. From the very first moment, his energy, enthusiasm, and fearless spirit set the tone for an extraordinary experience. Whether it was trekking through rugged trails, exploring hidden gems in nature, or taking spontaneous detours that led to breathtaking views, Prakash turned every moment into a story worth telling. His sense of adventure is contagious — the kind that makes you step out of your comfort zone and truly live the journey. What makes Prakash stand out is not just his love for adventure, but the way he makes every person feel like they’re part of something special. He’s the kind of travel companion who motivates you when the path gets tough, celebrates with you when you reach the peak, and ensures every experience becomes meaningful.",
     rating: 5,
-    school: "St. Mary's School",
+    school: "Euro International School",
   },
   {
-    name: "Meera Patel",
-    position: "Vice Principal, Greenwood High",
+    name: "Vibha Mahnot",
+    position: "Teacher, Rukmani Birla Modern High School",
     content:
-      "The day-out adventure program at Corbett was perfectly planned. Safety was their top priority, and the educational value was immense. Highly recommend Ignite Adventure for any school looking for quality programs.",
+      "Our school trip to Rishikesh and Tehri was an unforgettable blend of adventure, learning, and natural beauty.The majestic Tehri Dam and the tranquil Tehri Lake offered breathtaking views. The trip was well-planned, with safe travel, comfortable accommodations, and delicious food.Overall, this trip was a perfect mix of fun, adventure, and education. Thanks to Ignite Adventures and the team.",
     rating: 5,
-    school: "Greenwood High School",
+    school: "Rukmani Birla Modern High School",
   },
   {
-    name: "Amit Singh",
-    position: "Sports Teacher, Modern School",
+    name: "Knidhi Rajpoot",
+    position: "Coordinator, Mody School",
     content:
-      "What impressed me most was their attention to detail and safety protocols. The team building activities were innovative and really helped our students bond. Professional service from start to finish.",
+      "It was fun filled experience with Ignite team, we went to Kerala in the month of March with 62 school students by flight. We explored various places like Padmanabh temple, Jatayu rock centre, ISRO museum etc. We enjoyed the journey alot. Thanks Ignite team.",
     rating: 5,
-    school: "Modern School",
+    school: "Mody School",
   },
   {
-    name: "Sunita Gupta",
-    position: "Principal, Lotus Valley School",
+    name: "Janvi Pareek",
+    position: "Teacher, Daffodils World School",
     content:
-      "The international trip program exceeded our expectations. The astronomy component was particularly engaging for our science students. Ignite Adventure made learning come alive!",
+      "Recently went on a trip with them. Those four Days turned out into the golden memories that the students will cherish for a lifetime. You name it and they have it, they will never disappoint you with your choices and try their level best to serve you the best  All the crew members were highly supportive and energetic. I would highly recommend everyone to go for ignite adventures. ",
     rating: 5,
-    school: "Lotus Valley International School",
+    school: "Daffodils World School",
   },
 ]
 

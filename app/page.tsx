@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Mountain, Users, MapPin, Phone, Mail } from "lucide-react"
+import { Mountain, Users, MapPin, Phone, Mail, Globe, Award } from "lucide-react"
 import Link from "next/link"
 import TestimonialsSlider from "@/components/testimonials-slider"
 import GalleryPreview from "@/components/gallery-preview"
@@ -10,35 +10,52 @@ import HomepageHero from "@/components/homepage-hero"
 export default function HomePage() {
   const services = [
     {
-      title: "In-School Adventure Programs",
+      title: "In-School Adventure Camps",
       description:
         "Bring adventure directly to your school with our engaging on-campus programs designed to build teamwork and confidence.",
       features: [
-        "15+ Team Building Activities", // updated from 4 to 15+ activities
+        "15+ Team Building Activities",
         "Leadership Development Programs",
         "Problem Solving Challenges",
-        "20:1 Child-Instructor Ratio", // added instructor ratio
+        "20:1 Child-Instructor Ratio",
       ],
       icon: Users,
-      href: "/services/in-school",
+      href: "/programs/in-school",
       color: "bg-amber-700",
     },
     {
-      title: "Day-Out Adventure Programs",
+      title: "Day-Out Adventure Camps",
       description: "Exciting single-day adventure experiences at carefully selected locations near your school.",
       features: ["Rock Climbing", "Rappelling", "Nature Walks", "Adventure Games"],
       icon: Mountain,
-      href: "/services/day-out",
+      href: "/programs/day-out",
       color: "bg-slate-800",
     },
     {
-      title: "Residential School Trips",
+      title: "Residential Adventure Trips",
       description:
         "Multi-day educational adventures across India and international destinations with astronomy programs.",
       features: ["India Destinations", "International Trips", "Astronomy Programs", "Cultural Experiences"],
       icon: MapPin,
-      href: "/services/residential",
+      href: "/programs/residential",
       color: "bg-amber-700",
+    },
+    {
+      title: "International Exposure",
+      description: "Global adventure experiences combining travel, cultural immersion, and skill development.",
+      features: ["International Destinations", "Cross-cultural Learning", "Global Perspectives", "Adventure Sports"],
+      icon: Globe,
+      href: "/programs/international-exposure",
+      color: "bg-slate-700",
+    },
+    {
+      title: "IAYP & CAS Programs",
+      description:
+        "Award-focused programs aligned with International Awards for Young People and Creativity, Action, Service.",
+      features: ["Award Development", "Skill Building", "Leadership Tracks", "Certification"],
+      icon: Award,
+      href: "/programs/iayp-cas",
+      color: "bg-amber-600",
     },
   ]
 
@@ -72,12 +89,12 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-slate-800">Our Adventure Programs</h2>
             <p className="text-xl text-slate-700 max-w-3xl mx-auto font-body">
-              We offer three distinct types of adventure programs, each designed to provide unique learning experiences
+              We offer five distinct types of adventure programs, each designed to provide unique learning experiences
               and unforgettable memories for students.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-max">
             {services.map((service, index) => {
               const IconComponent = service.icon
               return (

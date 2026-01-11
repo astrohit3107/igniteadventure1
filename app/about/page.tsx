@@ -83,8 +83,8 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Students participating in adventure activities"
+                src="/images/let-20-282-29.jpg"
+                alt="Let Ignite Lead Your Journey"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-xl"
