@@ -43,7 +43,7 @@ export default function InSchoolPage() {
 
   const packages = [
     {
-      name: "In-School 9 AM to 1 PM",
+      name: "In-School (9 AM to 1 PM)",
       duration: "4 hours",
       participants: "300 minimum",
       activities: "13-15 Activities (As per age groups)",
@@ -57,7 +57,7 @@ export default function InSchoolPage() {
       ],
     },
     {
-      name: "In-School 9 AM to 4 PM",
+      name: "In-School (9 AM to 4 PM)",
       duration: "7 hours",
       participants: "300 minimum",
       activities: "13-15 Activities (As per age groups)",
@@ -94,10 +94,7 @@ export default function InSchoolPage() {
         { time: "06:00 am", activity: "Wake Up Call" },
         { time: "06:30 am", activity: "Exercise / Yoga" },
         { time: "08:00 am", activity: "Breakfast" },
-        { time: "09:30 am", activity: "Camp Game" },
-        { time: "11:00 am", activity: "Magic Show/Music" },
-        { time: "01:00 pm", activity: "Lunch" },
-        { time: "02:00 pm", activity: "Camp Dispersal" },
+        { time: "09:00 am", activity: "Camp Dispersal" },
       ],
     },
   ]
@@ -146,11 +143,11 @@ export default function InSchoolPage() {
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-amber-50 rounded-lg">
-                  <div className="text-2xl font-bold text-amber-700 font-heading">110+</div>
+                  <div className="text-2xl font-bold text-amber-700 font-heading">100+</div>
                   <div className="text-sm text-slate-600 font-body">Schools Served</div>
                 </div>
                 <div className="text-center p-4 bg-slate-50 rounded-lg">
-                  <div className="text-2xl font-bold text-slate-800 font-heading">45,000+</div>
+                  <div className="text-2xl font-bold text-slate-800 font-heading">75,000+</div>
                   <div className="text-sm text-slate-600 font-body">Students Impacted</div>
                 </div>
               </div>

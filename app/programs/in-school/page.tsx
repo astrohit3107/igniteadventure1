@@ -20,7 +20,13 @@ export default function InSchoolPage() {
     { title: "Tyre Swing" },
     { title: "Zipline" },
     { title: "Laser Beam" },
-    { title: "Minefield" },
+    { title: "Minefield" }
+    { title: "Running Bungee" }
+    { title: "Trampoline" }
+    { title: "Bouncy" }
+    { title: "Zorb Roller" }
+    { title: "Tug of War" }
+    { title: "Dart Game" },
   ]
 
   const benefits = [
@@ -42,7 +48,7 @@ export default function InSchoolPage() {
 
   const packages = [
     {
-      name: "In-School 9 AM to 1 PM",
+      name: "In-School (9 AM to 1 PM)",
       duration: "4 hours",
       participants: "300 minimum",
       activities: "13-15 Activities (As per age groups)",
@@ -56,7 +62,7 @@ export default function InSchoolPage() {
       ],
     },
     {
-      name: "In-School 9 AM to 4 PM",
+      name: "In-School (9 AM to 4 PM)",
       duration: "7 hours",
       participants: "300 minimum",
       activities: "13-15 Activities (As per age groups)",
@@ -75,7 +81,7 @@ export default function InSchoolPage() {
     },
     {
       name: "Overnight Camp",
-      duration: "24 hours",
+      duration: "20 hours",
       participants: "300 minimum",
       activities: "13-15 Activities (As per age groups)",
       ratio: "20:1",
@@ -93,10 +99,7 @@ export default function InSchoolPage() {
         { time: "06:00 am", activity: "Wake Up Call" },
         { time: "06:30 am", activity: "Exercise / Yoga" },
         { time: "08:00 am", activity: "Breakfast" },
-        { time: "09:30 am", activity: "Camp Game" },
-        { time: "11:00 am", activity: "Magic Show/Music" },
-        { time: "01:00 pm", activity: "Lunch" },
-        { time: "02:00 pm", activity: "Camp Dispersal" },
+        { time: "09:00 am", activity: "Camp Concludes" },
       ],
     },
   ]
@@ -166,11 +169,11 @@ export default function InSchoolPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-amber-700 mb-4">110+</div>
+              <div className="text-5xl font-bold text-amber-700 mb-4">100+</div>
               <p className="text-xl text-slate-700">Schools Served</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-amber-700 mb-4">45,000+</div>
+              <div className="text-5xl font-bold text-amber-700 mb-4">70,000+</div>
               <p className="text-xl text-slate-700">Students Impacted</p>
             </div>
             <div className="text-center">
@@ -185,7 +188,7 @@ export default function InSchoolPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">15+ Activities</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">20+ Activities</h2>
             <p className="text-xl text-slate-600">
               Carefully curated adventure activities designed for different age groups and learning objectives
             </p>
