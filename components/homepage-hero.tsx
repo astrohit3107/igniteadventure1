@@ -7,16 +7,16 @@ import Link from "next/link"
 
 const heroSlides = [
   {
-    src: "/hero-slider/JAISALMER.jpg",
-    alt: "Desert adventure in Jaisalmer with golden sand dunes",
-    title: "JAISALMER",
-    subtitle: "Desert Adventure",
-    description: "Experience the golden sands and rich culture of Rajasthan's desert jewel",
+    src: "/hero-slider/AGRA.jpg",
+    alt: "DDiscover iconic Monuments where history, arhitecture, and culture comes alive",
+    title: "AGRA",
+    subtitle: "Timeless Heritage",
+    description: "Discover iconic Monuments where history, arhitecture, and culture comes alive",
   },
   {
-    src: "/hero-slider/JIM CORBETT.jpg",
+    src: "/hero-slider/CORBETT.jpg",
     alt: "Wildlife safari experience in Jim Corbett National Park",
-    title: "JIM CORBETT",
+    title: "CORBETT",
     subtitle: "Wildlife Safari",
     description: "Discover India's oldest national park and encounter majestic wildlife",
   },
@@ -28,9 +28,9 @@ const heroSlides = [
     description: "Navigate through tranquil backwaters and lush green landscapes",
   },
   {
-    src: "/hero-slider/CHAKRATA.jpg",
-    alt: "Mountain adventure in Chakrata with scenic valleys",
-    title: "CHAKRATA",
+    src: "/hero-slider/MUSSOORIE.jpg",
+    alt: "Mountain adventure in Mussoorie with scenic valleys",
+    title: "MUSSOORIE",
     subtitle: "Mountain Retreat",
     description: "Explore pristine valleys and breathtaking Himalayan views",
   },
@@ -47,6 +47,41 @@ const heroSlides = [
     title: "JAIPUR",
     subtitle: "Royal Heritage",
     description: "Step into the royal past of Rajasthan's Pink City",
+  },
+  {
+    src: "/hero-slider/GOA.jpg",
+    alt: "Experience vibrant beaches, culture, and the spirit of exploration by the Sea.",
+    title: "GOA",
+    subtitle: "Coastal Freedom",
+    description: "Experience vibrant beaches, culture, and the spirit of exploration by the Sea.",
+  },
+  {
+    src: "/hero-slider/MANALI.jpg",
+    alt: "Breathe in adventure, nature and serenity amidst the Himalayas",
+    title: "MANALI",
+    subtitle: "Mountain Escape",
+    description: "Breathe in adventure, nature and serenity amidst the Himalayas",
+  },
+  {
+    src: "/hero-slider/MOUNT ABU.jpg",
+    alt: "RUnwind in Rajasthan's only Hill Station surrounded by forest and calm",
+    title: "MOUNT ABU",
+    subtitle: "Green Retreat",
+    description: "Unwind in Rajasthan's only Hill Station surrounded by forest and calm",
+  },
+  {
+    src: "/hero-slider/RISHIKESH.jpg",
+    alt: "Balance thrill and tranquility where Yoga, Rivers and Mountains meet",
+    title: "RISHIKESH",
+    subtitle: "Spiritual Adventure",
+    description: "Balance thrill and tranquility where Yoga, Rivers and Mountains meet",
+  },
+  {
+    src: "/hero-slider/UDAIPUR.jpg",
+    alt: "Explore lakes, palaces, and timeless stories of Rajasthan's royal past",
+    title: "UDAIPUR",
+    subtitle: "Royal Elegance",
+    description: "Explore lakes, palaces, and timeless stories of Rajasthan's royal past",
   },
 ]
 

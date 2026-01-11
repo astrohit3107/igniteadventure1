@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Linkedin, Instagram, Youtube } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -16,9 +16,9 @@ export default function Footer() {
               schools across India and beyond.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 text-stone-400 hover:text-amber-700 cursor-pointer transition-colors" />
+              <Linkedin className="h-5 w-5 text-stone-400 hover:text-amber-700 cursor-pointer transition-colors" />
               <Instagram className="h-5 w-5 text-stone-400 hover:text-amber-700 cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-stone-400 hover:text-amber-700 cursor-pointer transition-colors" />
+              <Youtube className="h-5 w-5 text-stone-400 hover:text-amber-700 cursor-pointer transition-colors" />
             </div>
           </div>
 
@@ -75,7 +75,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-amber-700 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-stone-300">+91 96504 85880</p>
+                  <p className="text-sm text-stone-300">+91 9694246555</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -87,9 +87,9 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-amber-700 mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-stone-300">
-                  Shop No. 7, Floor-2, Triveni Puliya, Gopalpura Bypass
+                  Plot No. 3, Bajrang Colony, Near Karhi Palace,
                   <br />
-                  Jaipur, Rajasthan - 302018
+                  Vaishali Nagar, Jaipur - 302034
                 </p>
               </div>
             </div>

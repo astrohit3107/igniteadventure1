@@ -6,62 +6,41 @@ import Image from "next/image"
 
 export default function DayOutPage() {
   const activities = [
-    {
-      title: "Rock Climbing",
-      description: "Safe, supervised rock climbing experiences with professional equipment and certified instructors.",
-      difficulty: "Beginner to Intermediate",
-      duration: "2-3 hours",
-    },
-    {
-      title: "Rappelling",
-      description: "Thrilling descent experiences that build confidence and overcome fear of heights.",
-      difficulty: "Beginner",
-      duration: "1-2 hours",
-    },
-    {
-      title: "Nature Walks & Trekking",
-      description: "Educational nature walks focusing on local flora, fauna, and environmental awareness.",
-      difficulty: "Easy to Moderate",
-      duration: "2-4 hours",
-    },
-    {
-      title: "Team Challenges",
-      description: "Outdoor team building activities designed to improve collaboration and communication.",
-      difficulty: "All Levels",
-      duration: "2-3 hours",
-    },
-    {
-      title: "Adventure Games",
-      description: "Fun, engaging games that combine physical activity with problem-solving skills.",
-      difficulty: "All Levels",
-      duration: "1-2 hours",
-    },
-    {
-      title: "Survival Skills",
-      description: "Basic outdoor survival skills including shelter building and navigation techniques.",
-      difficulty: "Intermediate",
-      duration: "3-4 hours",
-    },
+    { title: "Alpha Cross" },
+    { title: "Burma Bridge" },
+    { title: "Commando Bridge" },
+    { title: "Commando Crawl" },
+    { title: "Commando Net" },
+    { title: "Double Rope Bridge" },
+    { title: "Diagonal Rope Ladder" },
+    { title: "Body Zorb" },
+    { title: "Rope Ladder Climbing" },
+    { title: "Sport Climbing" },
+    { title: "Three Tyre Hurdle" },
+    { title: "Tyre Swing" },
+    { title: "Zipline" },
+    { title: "Laser Beam" },
+    { title: "Minefield" },
+    { title: "Running Bungee" },
+    { title: "Trampoline" },
+    { title: "Bouncy" },
+    { title: "Zorb Roller" },
+    { title: "Tug of War" },
+    { title: "Dart Game" },
   ]
 
   const locations = [
     {
-      name: "Corbett National Park Area",
-      distance: "240 km from Delhi",
-      highlights: ["Wildlife spotting", "River activities", "Nature photography"],
-      bestFor: "Nature lovers and wildlife enthusiasts",
+      name: "Jaipur",
+      distance: "Local destination",
+      highlights: ["Urban adventure parks", "Rock climbing", "Team building activities"],
+      bestFor: "City-based students and team bonding",
     },
     {
-      name: "Mussoorie Hills",
-      distance: "280 km from Delhi",
-      highlights: ["Mountain views", "Rock climbing", "Adventure sports"],
-      bestFor: "Adventure seekers and mountain lovers",
-    },
-    {
-      name: "Nainital Region",
-      distance: "320 km from Delhi",
-      highlights: ["Lake activities", "Hill station experience", "Scenic beauty"],
-      bestFor: "Scenic beauty and water activities",
+      name: "Delhi NCR",
+      distance: "Local to nearby areas",
+      highlights: ["Outdoor adventure zones", "Adventure sports", "Nature exploration"],
+      bestFor: "Delhi region schools and outdoor enthusiasts",
     },
   ]
 
@@ -91,7 +70,7 @@ export default function DayOutPage() {
             </p>
             <Button size="lg" className="bg-stone-100 text-slate-800 hover:bg-stone-200">
               <Phone className="w-5 h-5 mr-2" />
-              Plan Your Day Out
+              Contact Us
             </Button>
           </div>
         </div>
@@ -147,15 +126,15 @@ export default function DayOutPage() {
                   <div className="space-y-4">
                     <div>
                       <p className="text-sm text-slate-600 font-medium">GROUP SIZE</p>
-                      <p className="text-2xl font-bold text-slate-800">Flexible</p>
+                      <p className="text-2xl font-bold text-slate-800">25-700</p>
                     </div>
                     <div>
                       <p className="text-sm text-slate-600 font-medium">DURATION</p>
-                      <p className="text-2xl font-bold text-slate-800">Full Day</p>
+                      <p className="text-2xl font-bold text-slate-800">9:00 A.M - 4:00 P.M</p>
                     </div>
                     <div>
                       <p className="text-sm text-slate-600 font-medium">BEST FOR</p>
-                      <p className="text-2xl font-bold text-slate-800">All Age Groups</p>
+                      <p className="text-2xl font-bold text-slate-800">Grade-1 to Grade-12</p>
                     </div>
                   </div>
                 </CardContent>
@@ -165,30 +144,21 @@ export default function DayOutPage() {
         </div>
       </section>
 
-      {/* Activities Section */}
+      {/* Activities Section - Duplicated from In-School page */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">Adventure Activities</h2>
-            <p className="text-xl text-slate-600">Choose from our diverse range of outdoor experiences</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">20+ Activities</h2>
+            <p className="text-xl text-slate-600">
+              Carefully curated adventure activities designed for different age groups and learning objectives
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {activities.map((activity, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg">{activity.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <p className="text-slate-600 text-sm">{activity.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="text-xs">
-                      {activity.difficulty}
-                    </Badge>
-                    <Badge variant="outline" className="text-xs">
-                      {activity.duration}
-                    </Badge>
-                  </div>
+                <CardContent className="p-6">
+                  <p className="text-lg font-semibold text-slate-800">{activity.title}</p>
                 </CardContent>
               </Card>
             ))}
@@ -196,7 +166,7 @@ export default function DayOutPage() {
         </div>
       </section>
 
-      {/* Locations Section */}
+      {/* Featured Locations Section - Replaced with Jaipur and Delhi NCR only */}
       <section className="py-16 lg:py-24 bg-stone-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -204,7 +174,7 @@ export default function DayOutPage() {
             <p className="text-xl text-slate-600">Carefully selected destinations near major cities</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {locations.map((location, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader>

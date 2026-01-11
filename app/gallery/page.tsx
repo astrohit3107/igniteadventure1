@@ -357,19 +357,19 @@ export default function GalleryPage() {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">1000+</div>
+              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">1,00,000+</div>
               <div className="text-slate-700 font-exo-2">Photos Captured</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">15+</div>
+              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">20+</div>
               <div className="text-slate-700 font-exo-2">Locations</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">500+</div>
+              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">200+</div>
               <div className="text-slate-700 font-exo-2">Programs</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">25K+</div>
+              <div className="text-4xl font-orbitron font-bold text-amber-700 mb-2">80K+</div>
               <div className="text-slate-700 font-exo-2">Happy Students</div>
             </div>
           </div>
