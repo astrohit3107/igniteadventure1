@@ -20,12 +20,12 @@ export default function InSchoolPage() {
     { title: "Tyre Swing" },
     { title: "Zipline" },
     { title: "Laser Beam" },
-    { title: "Minefield" }
-    { title: "Running Bungee" }
-    { title: "Trampoline" }
-    { title: "Bouncy" }
-    { title: "Zorb Roller" }
-    { title: "Tug of War" }
+    { title: "Minefield" },
+    { title: "Running Bungee" },
+    { title: "Trampoline" },
+    { title: "Bouncy" },
+    { title: "Zorb Roller" },
+    { title: "Tug of War" },
     { title: "Dart Game" },
   ]
 
